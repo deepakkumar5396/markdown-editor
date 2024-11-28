@@ -1,0 +1,54 @@
+.editor-container {
+    display: flex; /* Use flexbox to arrange children in a row */
+    justify-content: space-between; /* Add space between editor and preview */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    height: 100vh; /* Full height */
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px; /* Space between editor and preview */
+  }
+  
+  .markdown-input {
+    width: 48%; /* Occupy 48% of the width */
+    height: 90vh;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    resize: none;
+    outline: none;
+  }
+  
+  .live-preview {
+    width: 48%; /* Occupy 48% of the width */
+    height: 90vh;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .live-preview pre {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+  }
+  
+  .live-preview code {
+    font-family: 'Courier New', monospace;
+    color: #d14;
+    background: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  
